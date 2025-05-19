@@ -1,0 +1,1634 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --corfundo: #f3caf0;
+  --cordtalhe: #e39fdf;
+  --corfundoME: #3a0737;
+  --cornavME: #8f2688;
+  --corfoo: #feaff5;
+  --corfooME: #550d4b;
+  --item-origem: #77d377;
+  --item-origemME: #31462d;
+  --item-formaME: #0a4229;
+}
+
+.ini {
+  background-color: var(--corfundo);
+  background-image: url(img/soja-plantacao.png);
+  /*trocar imagem*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Ajusta a imagem para cobrir todo o botão */
+  background-position: center;
+  /* Centraliza a imagem */
+  transition: 0.2s;
+  min-height: 100vh;
+}
+
+.milho {
+  background-image: none;
+}
+
+.soja {
+  background-image: none;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 100%;
+}
+
+nav {
+  background-color: var(--cordtalhe);
+  padding: 5px;
+  display: flex;
+  column-gap: 20px;
+  width: 100%;
+  transition: 0.5s;
+  position: fixed;
+  z-index: 1;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+  cursor: none;
+}
+
+.itim-regular {
+  font-family: "Itim", cursive;
+}
+
+.esp {
+  width: 100px;
+  background-color: rgba(0, 255, 255, 0);
+}
+
+li:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.lg {
+  height: 50px;
+  width: 50px;
+  display: none;
+  transition: 1s;
+  background-image: url(img/menu.png);
+  background-size: cover;
+  /* Ajusta a imagem para cobrir todo o botão */
+  background-position: center;
+  /* Centraliza a imagem */
+  margin: 5px 5px 5px 50px;
+}
+
+.lg:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.itemmenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.img-icon {
+  width: 25px;
+  padding-right: 10px;
+  top: 3px;
+  position: relative;
+}
+
+.lgh {
+  height: 60px;
+  margin-left: 50px;
+  position: relative;
+  top: 3px;
+}
+
+.alinha {
+  display: none;
+  transition: 1s;
+}
+
+.te {
+  background-color: #0000008e;
+}
+
+/*! tela menor*/
+@media (max-width: 895px) {
+  /*arrumar isos logo*/
+
+  /*base do site e pagina inicial*/
+
+  nav {
+    display: block;
+    position: fixed;
+  }
+
+  ul {
+    display: none;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+
+  #menu-toggle:checked+.logo+ul {
+    display: flex;
+  }
+
+  .itemmenu {
+    padding: 20px;
+    background-color: #d37ccd;
+  }
+
+  .itemmenu:hover {
+    background-color: #ce74c8;
+  }
+
+  :root:has(#modo-escuro-checkbox:checked) .itemmenu {
+    background-color: #993192;
+  }
+
+  :root:has(#modo-escuro-checkbox:checked) .itemmenu:hover {
+    background-color: #7b2776;
+  }
+
+  .alinha {
+    display: block;
+  }
+
+  .lg {
+    display: block;
+  }
+
+  .lgg {
+    display: none;
+    transition: 1s;
+  }
+
+  #scr {
+    font-size: 60px;
+  }
+
+  #colscr {
+    height: 150px;
+  }
+
+  .te {
+    display: flex;
+    flex-direction: column;
+    background-color: #0000008e;
+    position: relative;
+    top: 20px;
+  }
+
+  /*milho*/
+
+  #origemM p {
+    text-align: justify;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  #origemM img {
+    height: 180px;
+  }
+
+  #prft {
+    padding: 0px;
+  }
+
+  /*pamonha*/
+
+  #img-p {
+    width: 100%;
+    height: 40%;
+  }
+
+  #pl {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  #ifres {
+    font-size: 22px;
+  }
+
+}
+
+/*! fim*/
+
+/*teste de mais responsividade*/
+
+@media (max-width: 447px) {
+
+  #colscr {
+    display: none;
+  }
+
+  .te {
+    padding: 0px;
+  }
+
+}
+
+@media (max-width: 854px) {
+  #rps {
+    width: 100%;
+  }
+
+  #tex {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1026px) {
+  #rps {
+    width: 100%;
+  }
+
+  #tex {
+    width: 100%;
+  }
+
+
+}
+
+@media (max-width: 1280px) {
+
+  #img-p {
+    width: 70%;
+    position: relative;
+    left: 15%;
+    right: 15%;
+    margin-bottom: 25px;
+  }
+}
+
+
+@media (min-width: 1281px) {
+  #img-p {
+    width: 50%;
+    position: relative;
+    left: 25%;
+    right: 25%;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 376px) {
+
+  #origemM img {
+    height: 150px;
+  }
+
+}
+
+@media (max-width: 416px) {
+
+  #tt-re {
+    color: #2a802a;
+    font-size: 45px;
+  }
+
+}
+
+/*? botao duvidas*/
+
+#botao-fixo {
+  position: fixed;
+  bottom: 20px;
+  /*deixa ele baixo*/
+  background: rgb(249, 240, 251);
+  background: rgb(141, 212, 170);
+  background: radial-gradient(circle, rgba(141, 212, 170, 1) 0%, rgba(52, 179, 112, 1) 39%, rgba(6, 172, 59, 1) 100%);
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+#botao-fixo:hover {
+  background: rgb(249, 240, 251);
+  background: rgb(141, 212, 170);
+  background: radial-gradient(circle, rgba(141, 212, 170, 1) 0%, rgb(44, 151, 94) 39%, rgb(12, 141, 53) 100%);
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+#botao-fixo a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.ld {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+
+#botao-fixo img {
+  height: 35px;
+  position: relative;
+  top: 5px;
+}
+
+
+/*! codigo do modo escuro inicia aqui*/
+
+/*modo escuro base do site*/
+
+#modo-escuro-checkbox {
+  display: none;
+}
+
+#modo-escuro-label {
+  position: fixed;
+  z-index: 2;
+  top: 15px;
+  right: 50px;
+  color: #f2f2f2;
+  border: none;
+  padding: 20px 20px;
+  cursor: pointer;
+  background-image: url('/img/sun.png');
+  background-size: cover;
+  /* Ajusta a imagem para cobrir todo o botão */
+  background-position: center;
+  /* Centraliza a imagem */
+}
+
+#modo-escuro-label:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+:root:has(#modo-escuro-checkbox:checked) #modo-escuro-label {
+  background-image: url('img/crescent-moon.png');
+}
+
+:root:has(#modo-escuro-checkbox:not(:checked)) #modo-escuro-label {
+  background-image: url('img/sun.png');
+}
+
+
+:root:has(#modo-escuro-checkbox:checked) body {
+  background-color: var(--corfundoME);
+  color: #f2f2f2;
+  transition: 0.3s;
+}
+
+:root:has(#modo-escuro-checkbox:checked) nav {
+  background-color: var(--cornavME);
+  transition: 0.5s;
+}
+
+:root:has(#modo-escuro-checkbox:checked) .itemmenu a {
+  color: #f2f2f2;
+}
+
+:root:has(#modo-escuro-checkbox:checked) .lg {
+  background-image: url(img/menu-modo-escurro.png);
+  transition: 0.5s;
+  position: relative;
+  top: 7px;
+}
+
+/*modo escuro footer*/
+
+:root:has(#modo-escuro-checkbox:checked) footer {
+  background-color: var(--corfooME);
+  padding: 20px;
+  transition: 0.3s;
+  color: #fff;
+}
+
+:root:has(#modo-escuro-checkbox:checked) .instas2 a {
+  color: #ffffff;
+}
+
+:root:has(#modo-escuro-checkbox:checked) .col-p {
+  background-color: #f2f2f2;
+  transition: 0.3s;
+}
+
+:root:has(#modo-escuro-checkbox:checked) #ml {
+  background-color: #31462d;
+  transition: 0.3s;
+}
+
+:root:has(#modo-escuro-checkbox:checked) h1 {
+  color: #f2f2f2;
+  transition: 0.3s;
+}
+
+/*modo escuro milho*/
+
+:root:has(#modo-escuro-checkbox:checked) .origemM {
+  background-color: #31462d;
+  transition: 0.3s;
+}
+
+:root:has(#modo-escuro-checkbox:checked) .forma {
+  background-color: #172016;
+  transition: 0.3s;
+}
+
+:root:has(#modo-escuro-checkbox:checked) p {
+  color: white;
+  transition: 0.3s;
+}
+
+:root:has(#modo-escuro-checkbox:checked) h5 {
+  color: white;
+  transition: 0.3s;
+  text-shadow: 2px 2px 3px #19af46;
+}
+
+/*? modo escuro receita*/
+
+:root:has(#modo-escuro-checkbox:checked) .card__info {
+  background-color: #000;
+  transition: 0.3s;
+}
+
+/*?modo escuro30 anos */
+
+:root:has(#modo-escuro-checkbox:checked) .boxsl2 {
+  background-color: #31462d;
+}
+
+:root:has(#modo-escuro-checkbox:checked) #carssdd {
+  background-color: #31462d;
+  box-shadow: 10px 10px 10px #000000;
+}
+
+:root:has(#modo-escuro-checkbox:checked) .lp {
+  background-color: #ebf0ea;
+}
+
+:root:has(#modo-escuro-checkbox:checked) #lp2 {
+  background-color: #ebf0ea;
+}
+
+/*? labeis*/
+
+:root:has(#modo-escuro-checkbox:checked) .ingr label {
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+
+
+:root:has(#modo-escuro-checkbox:checked) input[type="checkbox"]:checked+.ingrediente {
+  background-color: #2195f300;
+  color: #cacaca;
+  text-decoration: line-through;
+}
+
+:root:has(#modo-escuro-checkbox:checked) .if p {
+  background-color: rgba(13, 107, 41, 0.404);
+  padding: 10px;
+  border-style: solid;
+  border-color: #0c712a;
+  border-radius: 20px;
+}
+
+
+/*! fim da troca de cor qualquer adidção deve ser posta aqui para manter a organização do codigo*/
+
+.merienda {
+  font-family: "Merienda", cursive;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.fjalla-one-regular {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ar {
+  display: flex;
+  padding: 30px 3px 0px 50px;
+  column-gap: 30px;
+}
+
+.col {
+  background-color: rgb(255, 255, 255);
+  height: 260px;
+  width: 20px;
+}
+
+.titulo-inicio {
+  font-size: 100px;
+  color: #fff;
+}
+
+.texto {
+  color: rgb(255, 255, 255);
+  margin: 30px;
+  font-size: 20px;
+}
+
+.te {
+  display: flex;
+  flex-direction: row-reverse;
+  text-shadow:
+    1px 1px 0 #000,
+    -1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000;
+  padding: 29px;
+  height: 150px;
+}
+
+footer {
+  background-color: var(--corfoo);
+  color: #000000;
+  padding: 15px;
+  transition: 0.3s;
+  min-height: 100%;
+}
+
+.foo {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 70px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.instas img {
+  height: 30px;
+  transition: 1s;
+}
+
+.instas {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.instas img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.winky-rough {
+  font-family: "Winky Rough", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/*css milho*/
+
+.titulo-p {
+  color: #000;
+  transition: 0.3s;
+  font-size: 90px;
+}
+
+.col-p {
+  background-color: rgb(0, 0, 0);
+  height: 260px;
+  width: 20px;
+  transition: 0.3s
+}
+
+.origemM {
+  background-color: var(--item-origem);
+  transition: 0.3s;
+  margin: 25px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.origemM h2 {
+  text-align: center;
+  font-size: 39px;
+}
+
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.origemM .ptex {
+  text-align: justify;
+  width: 50%;
+  font-size: 25px;
+}
+
+.origemM img {
+  height: 250px;
+  transition: 0.5s;
+}
+
+.prf {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  justify-content: center;
+  column-gap: 50px;
+  padding: 20px;
+
+}
+
+.origemM h3 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.prft {
+  display: flex;
+  column-gap: 25px;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+.tex {
+  width: 44%;
+  margin: 20px;
+  font-size: 25px;
+}
+
+.forma {
+  width: 230px;
+  background-color: #31c281;
+  clip-path: polygon(50% 0%, 100% 20%, 100% 100%, 0% 100%, 0% 20%);
+  padding: 20px;
+  position: relative;
+  z-index: 0;
+  display: block;
+  margin-top: 40px;
+  padding: 20px 20px 70px 20px;
+  transition: 0.5s;
+}
+
+.cid {
+  display: flex;
+  column-gap: 10px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.forma h5 {
+  color: rgb(0, 0, 0);
+  text-align: justify;
+  font-size: 28px;
+  font-family: "Itim", serif;
+  text-shadow: 2px 2px 3px #CECECE;
+}
+
+.pd1 {
+  position: relative;
+  top: 30px;
+  left: 30%;
+}
+
+.pd2 {
+  position: relative;
+  left: 18%;
+  top: 30px;
+}
+
+.pd3 {
+  position: relative;
+  left: 23%;
+  top: 30px;
+}
+
+.josefin-sans {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.forma p {
+  color: black;
+  text-align: justify;
+  width: 100%;
+  position: relative;
+  top: 40px;
+  font-size: 25px;
+}
+
+.origemM img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.forma:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+/*grafico*/
+
+/*css soja*/
+
+.pd1S {
+  position: relative;
+  top: 30px;
+  left: 25%;
+}
+
+.pd2S {
+  position: relative;
+  left: 27%;
+  top: 30px;
+}
+
+.pd3S {
+  position: relative;
+  left: 32%;
+  top: 30px;
+}
+
+/*teste menu drop tentar dps uma hora
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.dropdown-menu li {
+  margin-bottom: 10px;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+desisti bjss
+*/
+
+
+/*? receita*/
+
+.receita {
+  background-image: none;
+}
+
+.rec {
+  font-size: 100px;
+  position: relative;
+  text-align: center;
+}
+
+
+/* teste do card da receita*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+.lgrec {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 40px;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+
+.card--1 .card__img,
+.card--1 .card__img--hover {
+  background-image: url(img/pamonha.jpg);
+}
+
+.card--2 .card__img,
+.card--2 .card__img--hover {
+  background-image: url(img/bolodemilho.jpg);
+}
+
+.card--3 .card__img,
+.card--3 .card__img--hover {
+  background-image: url(img/Creme\ de\ milho.jpg);
+}
+
+.card--4 .card__img,
+.card--4 .card__img--hover {
+  background-image: url(img/sojacarne.jpg);
+}
+
+.card--5 .card__img,
+.card--5 .card__img--hover {
+  background-image: url(img/tofu.jpg);
+}
+
+.card--6 .card__img,
+.card--6 .card__img--hover {
+  background-image: url(img/sojadfgh.jpg);
+}
+
+
+.card__like {
+  width: 18px;
+}
+
+.card__clock {
+  width: 15px;
+  vertical-align: middle;
+  fill: #AD7D52;
+  position: relative;
+  right: 30px;
+}
+
+.card__time {
+  font-size: 12px;
+  color: #AD7D52;
+  vertical-align: middle;
+  position: relative;
+  right: 25px;
+
+}
+
+.card__clock-info {
+  float: right;
+}
+
+.card__img {
+  visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+}
+
+.card__info-hover {
+  position: absolute;
+  padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+}
+
+.card__img--hover {
+  transition: 0.2s all ease-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  top: 0;
+}
+
+.card {
+  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+  width: 350px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+}
+
+.card__info {
+  z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+}
+
+.card__title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.card__by {
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+.card__author {
+  font-weight: 600;
+  text-decoration: none;
+  color: #AD7D52;
+}
+
+.card:hover .card__img--hover {
+  height: 100%;
+  opacity: 0.3;
+}
+
+.card:hover .card__info {
+  background-color: transparent;
+  position: relative;
+}
+
+.card:hover .card__info-hover {
+  opacity: 1;
+}
+
+/*pamonha*/
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+.fdrec {
+  background-image: none;
+  background-color: #f8e5fa;
+}
+
+.titillium-web-regular {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fq {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: #ffffff;
+  padding: 28px;
+  background-color: #ffffff6f;
+  margin: 28px;
+}
+
+.fq img {
+  height: 350px;
+  border-radius: 30px;
+}
+
+.fq h1 {
+  font-size: 55px;
+}
+
+.infrec {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 30px;
+  width: 90%;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.if {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 30px;
+  justify-content: center;
+  text-align: justify;
+  font-size: 25px;
+}
+
+.if p {
+  background-color: #19af468f;
+  padding: 10px;
+  border-style: solid;
+  border-color: #19af46;
+  border-radius: 20px;
+}
+
+.if p:hover {
+  cursor: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*teste ingredientes*/
+
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+
+}
+
+.ingrediente {
+  background-color: #33333300;
+  padding: 10px;
+  border-bottom: 1px solid #ffffff00;
+  cursor: pointer;
+  color: #0f0f0f;
+  display: block;
+}
+
+.ingrediente img {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:checked+.ingrediente {
+  background-color: #2195f300;
+  color: #989898;
+  text-decoration: line-through;
+}
+
+.ingr ul {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 25px;
+  row-gap: 20px;
+  column-gap: 35px;
+}
+
+.ingr label {
+  font-size: 35px;
+  color: #000000;
+  transition: 0.3s;
+}
+
+.ingr label:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+/*modo de faazer*/
+
+.md-pr ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.md-pr {
+  width: 100%;
+  text-align: justify;
+  margin-right: 50px;
+}
+
+.itre {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  width: 96%;
+  border-radius: 13px;
+  font-size: 25px;
+  gap: 12px;
+  transition: 0.3s;
+}
+
+.itre:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 8px;
+
+}
+
+.itre span {
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+  background-color: #31c281;
+  padding: 10px;
+  width: 30px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  /* evita que o span seja comprimido */
+}
+
+input[type="checkbox"]:checked+.itre {
+  color: #989898;
+  transition: 0.3s;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+.tts {
+  text-align: center;
+  font-size: 50px;
+  color: #086611;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.fq.button {
+  background: #044A15;
+  background: linear-gradient(90deg, rgba(4, 74, 21, 1) 0%, rgba(60, 163, 96, 1) 51%, rgba(4, 74, 21, 1) 100%);
+  padding: 10px;
+  border-style: none;
+  border-radius: 20px;
+  transition: 0.3s;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.fq.button:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  box-shadow: #000 1px 1px 10px;
+}
+
+.abrplmd {
+  display: none;
+}
+
+:root:has(#toggle:checked) .abrplmd {
+  display: block;
+}
+
+#toggle {
+  display: none;
+}
+
+/*teste*/
+.stars {
+  display: flex;
+  flex-direction: row;
+}
+
+.star {
+  position: relative;
+}
+
+.star:not(:last-child) {
+  margin-right: 4px;
+}
+
+.stars input[type="checkbox"] {
+  display: none;
+}
+
+.stars label {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: rgb(255, 255, 255);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  cursor: pointer;
+}
+
+:root:has(#star2:checked) #star1+label,
+:root:has(#star2:checked) #star2+label {
+  background-color: yellow;
+}
+
+:root:has(#star3:checked) #star1+label,
+:root:has(#star3:checked) #star2+label,
+:root:has(#star3:checked) #star3+label {
+  background-color: yellow;
+}
+
+:root:has(#star4:checked) #star1+label,
+:root:has(#star4:checked) #star2+label,
+:root:has(#star4:checked) #star3+label,
+:root:has(#star4:checked) #star4+label {
+  background-color: yellow;
+}
+
+:root:has(#star5:checked) #star1+label,
+:root:has(#star5:checked) #star2+label,
+:root:has(#star5:checked) #star3+label,
+:root:has(#star5:checked) #star4+label,
+:root:has(#star5:checked) #star5+label {
+  background-color: rgb(255, 255, 7);
+}
+
+h5 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row;
+  transform: rotateY(180deg);
+}
+
+.star {
+  position: relative;
+}
+
+.stars input[type="radio"] {
+  display: none;
+}
+
+.stars label {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: rgb(200, 198, 198);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  cursor: pointer;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.star:not(:last-child) {
+  margin-left: 12px;
+}
+
+.stars input[type="radio"]:checked~label {
+  background-color: yellow;
+}
+
+/*n acredito que essed coiso funcionu aianda bemm tava surtano ja aaaaaaa*/
+
+/*? outro codigo maluco será que vai funcionar sksksksksksksksksksks*/
+
+.yy {
+  background-color: #e4f7e4;
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 10px;
+  color: #044A15;
+}
+
+.yy:hover {
+  background-color: #c5d4c5;
+  cursor: pointer;
+}
+
+.abrplmd {
+  transform: scale(1.4);
+}
+
+.msg-obrigada {
+  display: none;
+}
+
+#sw:checked~#msg-obrigada {
+  display: block;
+}
+
+#sw:checked+label {
+  display: none;
+}
+
+:root:has(#sw:checked) .stars {
+  display: none;
+}
+
+.sec {
+  display: flex;
+  justify-content: center;
+  margin-top: 6%;
+}
+
+.bolha {
+  height: 100px;
+  width: 100px;
+  background-color: #bf8eba;
+  animation: bolha 15s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 50px;
+
+}
+
+@keyframes bolha {
+  0% {
+    border-radius: 94% 42% 65% 75% / 60% 79% 60% 74%;
+  }
+
+  25% {
+    border-radius: 74% 26% 60% 40% / 51% 41% 59% 49%;
+  }
+
+  50% {
+    border-radius: 29% 71% 41% 59% / 54% 45% 55% 46%;
+  }
+
+  75% {
+    border-radius: 84% 78% 100% 48% / 84% 100% 88% 100%;
+  }
+
+  100% {
+    border-radius: 94% 42% 65% 75% / 60% 79% 60% 74%;
+  }
+
+}
+
+.bolha img {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+
+.invmd {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+.mnpqis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.mdinv {
+  background-color: #96e6ae;
+  margin: 0px;
+  width: 51%;
+}
+
+#mnalinhacr {
+  font-size: 25px;
+}
+
+/* Adicione essa media query para telas grandes */
+@media (min-width: 768px) {
+  .invmd {
+    flex-wrap: nowrap;
+  }
+
+  .mnpqis {
+    width: 49%;
+  }
+
+  .mdinv {
+    width: 51%;
+    height: 100vh;
+  }
+
+  .mdinv p {
+    padding: 35px;
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 50%;
+  }
+}
+
+/* Adicione essa media query para telas pequenas */
+@media (max-width: 767px) {
+  .invmd {
+    flex-direction: column;
+  }
+
+  .mnpqis {
+    width: 100%;
+  }
+
+  .mdinv {
+    width: 100%;
+  }
+
+  #mnalinhacr {
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+.pt-sans-narrow-regular {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-sans-narrow-bold {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.mdinv p {
+  padding: 35px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+/*vale apena comentar ?? ja ate me perdi aff pg 30 anos agrinho*/
+
+@media (max-width: 870px) {
+
+  .boxsl {
+    background-color: #668f6a;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px;
+  }
+
+  #img-tex {
+    display: flex;
+    width: 100%;
+    background-color: #00a65b00;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 18px;
+  }
+
+  .img-tex-p {
+    width: 100%;
+    background-color: #550d4b00;
+  }
+
+  .img-tex img {
+    width: 100%;
+  }
+
+  #carssdd {
+    width: 100%;
+    padding: 37px;
+    margin-right: 0px;
+    position: relative;
+    top: 0px;
+    box-shadow: 0px 0px;
+  }
+
+  #boxsl2 h3 {
+    position: relative;
+    top: 0px;
+    text-align: center;
+    padding-left: 0px;
+    padding-bottom: 20px;
+  }
+
+  #lp2 {
+    display: block;
+    background-color: #000;
+    height: 2px;
+    margin-top: 30px;
+  }
+
+  #ht30 {
+    padding: 0px 50px 20px 50px;
+    font-size: 20px;
+    position: relative;
+    top: 0px;
+  }
+
+  :root:has(#modo-escuro-checkbox:checked) #carssdd {
+    background-color: #31462d;
+    box-shadow: 0px 0px;
+  }
+
+}
+
+
+.lp {
+  background-color: #000;
+  height: 2px;
+  margin-bottom: 30px;
+}
+
+/*teste pra por em telinha de pc*/
+
+.boxsl {
+  background-color: #668f6a;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.img-tex {
+  display: flex;
+  column-gap: 30px;
+  margin: 50px;
+}
+
+.img-tex-p {
+  text-align: center;
+  display: flex;
+  margin-top: 8%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.alpc {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.carssdd {
+  width: 39%;
+  background-color: #d0e1d5;
+  text-align: center;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 20px;
+  padding-bottom: 28px;
+  position: relative;
+  top: -130px;
+  margin-right: 10%;
+  box-shadow: 10px 10px 10px #828483;
+}
+
+.boxsl2 {
+  background-color: #d0e1d5;
+}
+
+.nnom {
+  position: relative;
+  top: -80px;
+  padding-left: 100px;
+  font-size: 35px;
+}
+
+.ht30 {
+  padding: 0px 50px 20px 50px;
+  font-size: 20px;
+  position: relative;
+  top: -50px;
+  text-align: justify;
+}
+
+.ht301 {
+  font-size: 20px;
+  padding: 0px 50px 20px 50px;
+}
+
+.bbba {
+  font-size: 35px;
+  padding-left: 100px;
+  position: relative;
+  top: -30px;
+  text-align: justify;
+}

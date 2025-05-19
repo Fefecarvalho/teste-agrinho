@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --preto: #070707;
+  --rosa: #f192be;
+  --verde: #c3e838;
+  --гохо: #ea8af4;
+  --azul: #5a69dc;
+  --laranja: #f1c592;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.bolha{
+  height: 100px;
+  width: 100px;
+  background-color: #5a69dc;
+  animation: bolha 10s infinite;
+
+}
+
+@keyframes bolha {
+  0% {
+  clip-path: shape(from 8.55% 71.21%,curve to 5.97% 40.66% with 0.61% 56.24%,curve to 25.05% 19.40% with 11.34% 25.08%,curve to 50.40% 17.55% with 38.77% 13.72%,curve to 72.78% 27.07% with 62.03% 21.38%,curve to 87.55% 46.10% with 83.54% 32.77%,curve to 80.38% 67.37% with 91.57% 59.44%,curve to 58.48% 85.52% with 69.20% 75.29%,curve to 32.13% 90.97% with 47.76% 95.75%,curve to 8.55% 71.21% with 16.49% 86.18%);
+  }
+
+  50%{
+  clip-path: shape(from 12.10% 65.51%,curve to 4.91% 41.92% with 0.58% 56.24%,curve to 21.21% 20.92% with 9.24% 27.59%,curve to 44.72% 15.68% with 33.17% 14.24%,curve to 67.45% 20.11% with 56.27% 17.11%,curve to 85.93% 33.82% with 78.63% 23.11%,curve to 86.55% 55.48% with 93.23% 44.54%,curve to 74.80% 79.18% with 79.88% 66.42%,curve to 55.24% 95.23% with 69.73% 91.93%,curve to 32.18% 86.65% with 40.74% 98.53%,curve to 12.10% 65.51% with 23.62% 74.77%);
+  }
+
+  100%{
+  clip-path: shape(from 10.90% 66.62%,curve to 4.53% 41.72% with 0.54% 56.25%,curve to 20.32% 19.60% with 8.52% 27.20%,curve to 44.56% 12.65% with 32.12% 12.01%,curve to 68.74% 17.34% with 57.00% 13.29%,curve to 87.60% 32.87% with 80.47% 21.38%,curve to 88.94% 56.29% with 94.73% 44.35%,curve to 76.63% 80.47% with 83.16% 68.23%,curve to 55.41% 95.69% with 70.10% 92.71%,curve to 30.98% 87.83% with 40.72% 98.67%,curve to 10.90% 66.62% with 21.25% 77.00%);
+  }
+}
+
+footer{
+  animation: onda 10s infinite;
+  height: 500px;
+  width: 1000px;
+  background-repeat: no-repeat;
+
+}
+
+@keyframes onda {
+  0%{
+    background-image: url(img/testeee.jpg);
+  }
+
+  30%{
+    background-image: url(img/teste33.jpg);
+  }
+
+  70%{
+    background-image: url(img/testee5.jpg);
+  }
+
+  100%{
+    background-image: url(img/testeee.jpg);
+  }
+}
