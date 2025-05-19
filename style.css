@@ -11,12 +11,12 @@
 }
 
 :root {
-  --corfundo: #f3caf0;
-  --cordtalhe: #e39fdf;
-  --corfundoME: #3a0737;
-  --cornavME: #8f2688;
-  --corfoo: #feaff5;
-  --corfooME: #550d4b;
+  --corfundo: #a2db86;
+  --cordtalhe: #91b399;
+  --corfundoME: #3e6b3a;
+  --cornavME: #354137;
+  --corfoo: #92bd96;
+  --corfooME: #093f15;
   --item-origem: #77d377;
   --item-origemME: #31462d;
   --item-formaME: #0a4229;
@@ -73,7 +73,7 @@ li a {
 
 .esp {
   width: 100px;
-  background-color: rgba(0, 255, 255, 0);
+  background-color: rgba(39, 190, 190, 0);
 }
 
 li:hover {
@@ -158,19 +158,19 @@ li:hover {
 
   .itemmenu {
     padding: 20px;
-    background-color: #d37ccd;
+    background-color: #759572;
   }
 
   .itemmenu:hover {
-    background-color: #ce74c8;
+    background-color: #566d5b;
   }
 
   :root:has(#modo-escuro-checkbox:checked) .itemmenu {
-    background-color: #993192;
+    background-color: #506d52;
   }
 
   :root:has(#modo-escuro-checkbox:checked) .itemmenu:hover {
-    background-color: #7b2776;
+    background-color: #344e32;
   }
 
   .alinha {
@@ -623,7 +623,6 @@ footer {
 }
 
 .origemM {
-  background-color: var(--item-origem);
   transition: 0.3s;
   margin: 25px;
   border-radius: 20px;
@@ -633,6 +632,24 @@ footer {
 .origemM h2 {
   text-align: center;
   font-size: 39px;
+}
+
+.origemM .box-1{
+  background-color: #83a18a;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.origemM .box-2{
+  background-color: #62a071;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.origemM .box-3{
+  background-color: #83a18a;
+  border-radius: 20px;
+  padding: 20px;
 }
 
 .righteous-regular {
@@ -652,6 +669,11 @@ footer {
   transition: 0.5s;
 }
 
+.origemS img {
+  height: 250px;
+  transition: 0.5s;
+}
+
 .prf {
   display: flex;
   flex-wrap: wrap;
@@ -659,12 +681,38 @@ footer {
   justify-content: center;
   column-gap: 50px;
   padding: 20px;
+}
 
+.origemS .prf {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  justify-content: center;
+  column-gap: 50px;
+  padding: 20px;
+}
+
+.origemS .ptex {
+  text-align: justify;
+  width: 50%;
+  font-size: 25px;
 }
 
 .origemM h3 {
   text-align: center;
   font-size: 25px;
+}
+
+.origemS h3 {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 39px;
+}
+
+.origemS h2 {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 30px;
 }
 
 .prft {
@@ -774,6 +822,35 @@ footer {
   position: relative;
   left: 32%;
   top: 30px;
+}
+
+.origemS .box-2{
+  background-color: #64a56e;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.origemS{
+  margin: 25px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.origemS .box-1{
+  background-color: #77a78bf6;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.origemS .box-3{
+  background-color: #889e8b;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.origemS h2{
+  text-align: center;
+  font-size: 39px;
 }
 
 /*teste menu drop tentar dps uma hora
@@ -1346,7 +1423,7 @@ h5 {
 .bolha {
   height: 100px;
   width: 100px;
-  background-color: #bf8eba;
+  background-color: #ffb0d1;
   animation: bolha 15s infinite;
   display: flex;
   justify-content: center;
@@ -1547,6 +1624,14 @@ h5 {
     box-shadow: 0px 0px;
   }
 
+  .mn-slaq{
+    width: 90%;
+  }
+
+  .box-2 img{
+    width: 90%;
+  }
+
 }
 
 
@@ -1632,3 +1717,4 @@ h5 {
   top: -30px;
   text-align: justify;
 }
+
