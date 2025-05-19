@@ -16,7 +16,7 @@
   --corfundoME: #3e6b3a;
   --cornavME: #354137;
   --corfoo: #92bd96;
-  --corfooME: #093f15;
+  --corfooME: #354137;
   --item-origem: #77d377;
   --item-origemME: #31462d;
   --item-formaME: #0a4229;
@@ -24,7 +24,7 @@
 
 .ini {
   background-color: var(--corfundo);
-  background-image: url(img/soja-plantacao.png);
+  background-image: url(img/ml.jpg);
   /*trocar imagem*/
   background-repeat: no-repeat;
   background-size: cover;
@@ -546,14 +546,18 @@ li:hover {
 }
 
 .col {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   height: 260px;
   width: 20px;
 }
 
 .titulo-inicio {
   font-size: 100px;
-  color: #fff;
+  color: #000000;
+}
+
+:root:has(#modo-escuro-checkbox:checked) .titulo-inicio {
+  color: #000000;
 }
 
 .texto {
