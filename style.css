@@ -210,6 +210,12 @@ li:hover {
     font-size: 18px;
   }
 
+    #origemS p {
+    text-align: justify;
+    width: 100%;
+    font-size: 18px;
+  }
+
   #origemM img {
     height: 180px;
   }
@@ -633,22 +639,22 @@ footer {
   font-size: 39px;
 }
 
-.origemM .box-1{
+.origemM .box-1 {
   background-color: #83a18a;
   border-radius: 20px;
-  padding: 20px;
+  padding: 40px 0px 10px 0px;
 }
 
-.origemM .box-2{
+.origemM .box-2 {
   background-color: #62a071;
   border-radius: 20px;
-  padding: 20px;
+  padding: 40px 0px 10px 0px;
 }
 
-.origemM .box-3{
+.origemM .box-3 {
   background-color: #83a18a;
   border-radius: 20px;
-  padding: 20px;
+  padding: 40px 0px 10px 0px;
 }
 
 .righteous-regular {
@@ -691,7 +697,22 @@ footer {
   padding: 20px;
 }
 
+.origemM .prf {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  justify-content: center;
+  column-gap: 50px;
+  padding: 20px;
+}
+
 .origemS .ptex {
+  text-align: justify;
+  width: 50%;
+  font-size: 25px;
+}
+
+.origemM .ptex {
   text-align: justify;
   width: 50%;
   font-size: 25px;
@@ -823,30 +844,30 @@ footer {
   top: 30px;
 }
 
-.origemS .box-2{
+.origemS .box-2 {
   background-color: #64a56e;
   border-radius: 20px;
-  padding: 20px;
+  padding: 40px 0px 10px 0px;
 }
 
-.origemS{
+.origemS {
   border-radius: 20px;
   padding: 20px;
 }
 
-.origemS .box-1{
+.origemS .box-1 {
   background-color: #77a78bf6;
   border-radius: 20px;
-  padding: 20px;
+  padding: 40px 0px 10px 0px;
 }
 
-.origemS .box-3{
+.origemS .box-3 {
   background-color: #889e8b;
   border-radius: 20px;
-  padding: 20px;
+  padding: 40px 0px 10px 0px;
 }
 
-.origemS h2{
+.origemS h2 {
   text-align: center;
   font-size: 39px;
 }
@@ -1622,11 +1643,11 @@ h5 {
     box-shadow: 0px 0px;
   }
 
-  .mn-slaq{
+  .mn-slaq {
     width: 90%;
   }
 
-  .box-2 img{
+  .box-2 img {
     width: 90%;
   }
 
@@ -1715,4 +1736,3 @@ h5 {
   top: -30px;
   text-align: justify;
 }
-
