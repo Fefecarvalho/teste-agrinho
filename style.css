@@ -54,6 +54,7 @@
 
 .box-inicio h1 {
   font-size: 40px;
+  color: white;
 }
 
 :root:has(#modo-escuro-checkbox:checked) #scr-louca {
