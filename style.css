@@ -375,6 +375,13 @@ li:hover {
   #tex {
     width: 100%;
   }
+
+  .origemM .box-1 #rps{
+  display: flex; 
+  top: 0px;
+  position: relative;
+}
+
 }
 
 @media (max-width: 1026px) {
@@ -385,6 +392,12 @@ li:hover {
   #tex {
     width: 100%;
   }
+
+  .origemM .box-1 #rps{
+  display: flex; 
+  top: 0px;
+  position: relative;
+}
 
 
 }
@@ -745,29 +758,40 @@ footer {
 .origemM {
   transition: 0.3s;
   border-radius: 20px;
-  padding: 20px;
+  padding: 0px;
 }
 
 .origemM h2 {
   text-align: center;
-  font-size: 39px;
+  font-size: 49px;
 }
 
 .origemM .box-1 {
-  background-color: #83a18a;
-  border-radius: 20px;
+  background-color: #a7baac;
   padding: 40px 0px 10px 0px;
+}
+
+.origemM .box-1 p{
+  display: flex; 
+  top: 5px;
+  position: relative;
+  font-size: 30px;
 }
 
 .origemM .box-2 {
-  background-color: #62a071;
-  border-radius: 20px;
+  background-color: #7eb18b;
   padding: 40px 0px 10px 0px;
 }
 
+.origemM .box-2 p{
+  display: flex; 
+  top: 5px;
+  position: relative;
+  font-size: 30px;
+}
+
 .origemM .box-3 {
-  background-color: #83a18a;
-  border-radius: 20px;
+  background-color: #6d9176;
   padding: 40px 0px 10px 0px;
 }
 
@@ -784,7 +808,7 @@ footer {
 }
 
 .origemM img {
-  height: 250px;
+  height: 350px;
   transition: 0.5s;
 }
 
@@ -834,12 +858,12 @@ footer {
 
 .origemM h3 {
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .origemS h3 {
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   padding-top: 39px;
 }
 
@@ -858,10 +882,54 @@ footer {
   padding: 30px;
 }
 
+/** menu drop teste 585*/
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* adicionado para abrir abaixo do item */
+  left: 0; /* ajustado para alinhar com o item */
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+  min-width: 150px; /* adicionado para definir a largura mínima */
+}
+
+.dropdown {
+  position: relative; /* adicionado para que o dropdown seja relativo ao item */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-menu a:hover {
+  color: #666;
+  display: block;
+}
+
+
+
+
+
+
 .tex {
   width: 44%;
   margin: 20px;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .forma {
