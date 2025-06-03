@@ -131,18 +131,17 @@
   left: 20px;
 }
 
-@media (min-width: 1279px) {
+@media (min-width: 1000px) {
 
   .mn-plm {
     background-color: #7f542f00;
     display: flex;
     justify-content: flex-end;
     position: relative;
-    top: -500px !important;
-    left: 100px !important;
+    top: -240px !important;
+    left: 110px !important;
   }
 }
-
 
 .milho {
   background-image: none;
@@ -535,6 +534,10 @@ li:hover {
   transition: 0.5s;
 }
 
+:root:has(#modo-escuro-checkbox:checked) .dropdown-menu .md-mn-dp {
+  color: #605e5e;
+}
+
 :root:has(#modo-escuro-checkbox:checked) .itemmenu a {
   color: #f2f2f2;
 }
@@ -596,6 +599,19 @@ li:hover {
   transition: 0.3s;
   text-shadow: 2px 2px 3px #19af46;
 }
+
+:root:has(#modo-escuro-checkbox:checked) .box-1 {
+  background-color: #3e6449;
+}
+
+:root:has(#modo-escuro-checkbox:checked) .box-2 {
+  background-color: #1f4129;
+}
+
+:root:has(#modo-escuro-checkbox:checked) .box-3 {
+  background-color: #102817;
+}
+
 
 /*? modo escuro receita*/
 
@@ -813,7 +829,7 @@ footer {
 }
 
 .origemS img {
-  height: 250px;
+  height: 350px;
   transition: 0.5s;
 }
 
@@ -921,11 +937,6 @@ footer {
   display: block;
 }
 
-
-
-
-
-
 .tex {
   width: 44%;
   margin: 20px;
@@ -1026,34 +1037,45 @@ footer {
   top: 30px;
 }
 
+.origemS .tex{
+  font-size: 35px;
+}
+
+.origemS .box-1 p{
+  font-size: 35px;
+}
+
+.origemS .box-2 p{
+  font-size: 30px;
+}
+
 .origemS .box-2 {
   background-color: #64a56e;
-  border-radius: 20px;
-  padding: 40px 0px 10px 0px;
+  padding: 59px 10px 30px 10px;
 }
 
 .origemS {
   border-radius: 20px;
-  padding: 20px;
 }
 
 .origemS .box-1 {
   background-color: #77a78bf6;
-  border-radius: 20px;
-  padding: 40px 0px 10px 0px;
+  padding: 59px 10px 30px 10px;
 }
 
 .origemS .box-3 {
   background-color: #889e8b;
-  border-radius: 20px;
-  padding: 40px 0px 10px 0px;
+  padding: 59px 10px 30px 10px;
 }
 
 .origemS h2 {
   text-align: center;
-  font-size: 39px;
+  font-size: 50px;
 }
 
+.origemS h3{
+  font-size: 35px;
+}
 /*teste menu drop tentar dps uma hora
 
 .dropdown {
@@ -1904,14 +1926,14 @@ h5 {
 
 .ht30 {
   padding: 0px 50px 20px 50px;
-  font-size: 20px;
+  font-size: 25px;
   position: relative;
   top: -50px;
   text-align: justify;
 }
 
 .ht301 {
-  font-size: 20px;
+  font-size: 25px;
   padding: 0px 50px 20px 50px;
 }
 
@@ -1921,4 +1943,11 @@ h5 {
   position: relative;
   top: -30px;
   text-align: justify;
+}
+
+.bbba3{
+  font-size: 35px;
+  padding-left: 90px;
+  text-align: justify;
+  padding-top: 20px;
 }
