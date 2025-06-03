@@ -375,11 +375,11 @@ li:hover {
     width: 100%;
   }
 
-  .origemM .box-1 #rps{
-  display: flex; 
-  top: 0px;
-  position: relative;
-}
+  .origemM .box-1 #rps {
+    display: flex;
+    top: 0px;
+    position: relative;
+  }
 
 }
 
@@ -392,11 +392,11 @@ li:hover {
     width: 100%;
   }
 
-  .origemM .box-1 #rps{
-  display: flex; 
-  top: 0px;
-  position: relative;
-}
+  .origemM .box-1 #rps {
+    display: flex;
+    top: 0px;
+    position: relative;
+  }
 
 
 }
@@ -787,8 +787,8 @@ footer {
   padding: 40px 0px 10px 0px;
 }
 
-.origemM .box-1 p{
-  display: flex; 
+.origemM .box-1 p {
+  display: flex;
   top: 5px;
   position: relative;
   font-size: 30px;
@@ -799,8 +799,8 @@ footer {
   padding: 40px 0px 10px 0px;
 }
 
-.origemM .box-2 p{
-  display: flex; 
+.origemM .box-2 p {
+  display: flex;
   top: 5px;
   position: relative;
   font-size: 30px;
@@ -902,16 +902,20 @@ footer {
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%; /* adicionado para abrir abaixo do item */
-  left: 0; /* ajustado para alinhar com o item */
+  top: 100%;
+  /* adicionado para abrir abaixo do item */
+  left: 0;
+  /* ajustado para alinhar com o item */
   background-color: #f9f9f9;
   padding: 10px;
   border: 1px solid #ccc;
-  min-width: 150px; /* adicionado para definir a largura mínima */
+  min-width: 150px;
+  /* adicionado para definir a largura mínima */
 }
 
 .dropdown {
-  position: relative; /* adicionado para que o dropdown seja relativo ao item */
+  position: relative;
+  /* adicionado para que o dropdown seja relativo ao item */
 }
 
 .dropdown:hover .dropdown-menu {
@@ -1037,15 +1041,15 @@ footer {
   top: 30px;
 }
 
-.origemS .tex{
+.origemS .tex {
   font-size: 35px;
 }
 
-.origemS .box-1 p{
+.origemS .box-1 p {
   font-size: 35px;
 }
 
-.origemS .box-2 p{
+.origemS .box-2 p {
   font-size: 30px;
 }
 
@@ -1073,9 +1077,10 @@ footer {
   font-size: 50px;
 }
 
-.origemS h3{
+.origemS h3 {
   font-size: 35px;
 }
+
 /*teste menu drop tentar dps uma hora
 
 .dropdown {
@@ -1855,6 +1860,17 @@ h5 {
     width: 90%;
   }
 
+  
+#titulo-pr {
+  text-align: center;
+  font-size: 33px;
+  position: relative;
+  top: -4px;
+  color: rgb(0, 0, 0);
+  background-color: #a6caab;
+  padding: 20px;
+}
+
 }
 
 
@@ -1945,9 +1961,24 @@ h5 {
   text-align: justify;
 }
 
-.bbba3{
+.bbba3 {
   font-size: 35px;
   padding-left: 90px;
   text-align: justify;
   padding-top: 20px;
 }
+
+/*? milho em cambará*/
+
+.video {
+  width: 100%;
+}
+
+.titulo-pr {
+  text-align: center;
+  font-size: 50px;
+  position: relative;
+  top: -500px;
+  color: white;
+}
+
