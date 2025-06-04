@@ -1783,6 +1783,14 @@ h5 {
   text-align: justify;
 }
 
+/*teste da altura*/
+
+@media (min-height: 1300px) {
+  #titulo-pr {
+    font-size: 36px;
+  }
+}
+
 /*vale apena comentar ?? ja ate me perdi aff pg 30 anos agrinho*/
 
 @media (max-width: 870px) {
@@ -1860,16 +1868,18 @@ h5 {
     width: 90%;
   }
 
-  
-#titulo-pr {
-  text-align: center;
-  font-size: 33px;
-  position: relative;
-  top: -4px;
-  color: rgb(0, 0, 0);
-  background-color: #a6caab;
-  padding: 20px;
-}
+
+  #titulo-pr {
+    text-align: center;
+    font-size: 33px;
+    position: relative;
+    top: -4px;
+    color: rgb(0, 0, 0);
+    background-color: #a6caab;
+    padding: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
 
 }
 
@@ -1968,17 +1978,68 @@ h5 {
   padding-top: 20px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.indie-flower-regular {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 /*? milho em cambará*/
 
 .video {
   width: 100%;
+  filter: brightness(0.5) blur(4px);
+  box-shadow: inset 0 0 100px rgba(19, 20, 19, 0.764);
+}
+
+.video-container {
+  background-color: #044A15;
+  position: relative;
 }
 
 .titulo-pr {
-  text-align: center;
-  font-size: 50px;
-  position: relative;
-  top: -500px;
-  color: white;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  z-index: 1;
 }
 
+.fst-mlh {
+  position: absolute;
+  top: 50%;
+  /* alterar o valor de top para que o botão fique abaixo do título */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: rgba(255, 0, 0, 0);
+  color: white;
+  border: 3px solid #fff;
+  padding: 10px;
+  border-radius: 15px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.ent-fzd {
+  position: absolute;
+  top: 60%;
+  /* alterar o valor de top para que o botão fique abaixo do título */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: rgba(125, 235, 100, 0.351);
+  color: white;
+  border: 3px solid #5cff3b;
+  padding: 10px;
+  border-radius: 15px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
