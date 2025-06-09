@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="slkcr">
 
     <nav>
         <li class="itemmenu lgg"><a href="index.html"><img class="lgh" src="img/gardening.png" alt=""></a></li>
@@ -19,17 +19,16 @@
         <ul>
             <li class="itemmenu itim-regular"><a class="alinha" href="index.html"><img class="img-icon"
                         src="img/gardening.png" alt="">Inicio</a></li>
-            <li class="itemmenu itim-regular dropdown">
+            <li id="mil" class="itemmenu itim-regular dropdown">
                 <a href="milho.html" class="dropdown-toggle">
                     <img class="img-icon" src="img/corn.png" alt="">Milho
                 </a>
-                <ul class="dropdown-menu">
+                <ul id="dropdown-menu" class="dropdown-menu">
                     <li>
                         <a class="md-mn-dp" href="milho-cambara.html">Milho em Cambará</a>
                     </li>
                 </ul>
             </li>
-
             <li class="itemmenu itim-regular"><a href="soja.html"><img class="img-icon" src="img/soja.png"
                         alt="">Soja</a></li>
             <li class="itemmenu itim-regular"><a href="receita.html"><img class="img-icon" src="img/chef.png"
@@ -41,43 +40,49 @@
             <li class="esp"></li>
         </ul>
     </nav>
+
+    <input type="checkbox" id="modo-escuro-checkbox">
+    <label for="modo-escuro-checkbox" id="modo-escuro-label"></label>
+
+
     <br><br><br>
 
     <div class="video-container">
+
+        <div class="slk-ncompensa">
+            <h1 class="ttt indie-flower-regular" id="ttt">Produçao de milho em Cambará</h1>
+        </div>
         <video class="video hero" autoplay muted loop>
             <source src="img/vd.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="blur-overlay"></div>
-        
 
-    <h1 id="titulo-pr" class="titulo-pr indie-flower-regular ">Plantações de milho em cambará</h1>
+        <button id="fst-mlh" class="fst-mlh">Festa do milho</button>
 
-    <button class="fst-mlh">Festa do milho</button>
-    
-    <button class="ent-fzd">Entrevistas</button>
+        <button id="ent-fzd" class="ent-fzd">Entrevistas</button>
     </div>
 
-     <footer>
+    <footer>
 
-    <div id="foo" class="foo">
+        <div id="foo" class="foo">
 
-      <div class="instas">
-        <a href="https://github.com/Fefecarvalho"><img id="instaf" src="img/github.png" alt=""></a>
-        <a href="https://www.instagram.com/nanda.cpb/profilecard/?igsh=MTU0ODFwdnRuc3BzcQ=="><img id="instaf"
-            src="img/logo-insta.png" alt=""></a>
-        <a href="https://www.linkedin.com/in/fernanda-carvalho-b79457304/"><img id="instaf" src="img/linkedin.png"
-            alt=""></a>
-      </div>
+            <div class="instas">
+                <a href="https://github.com/Fefecarvalho"><img id="instaf" src="img/github.png" alt=""></a>
+                <a href="https://www.instagram.com/nanda.cpb/profilecard/?igsh=MTU0ODFwdnRuc3BzcQ=="><img id="instaf"
+                        src="img/logo-insta.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/fernanda-carvalho-b79457304/"><img id="instaf"
+                        src="img/linkedin.png" alt=""></a>
+            </div>
 
-      <p>
-        &copy; 2025 Brasil, Paraná, Cambará, 2025 <br>
-        Desenvolvido por: Fernanda Carvalho de Proença Braido 2°B.
-      </p>
+            <p>
+                &copy; 2025 Brasil, Paraná, Cambará, 2025 <br>
+                Desenvolvido por: Fernanda Carvalho de Proença Braido 2°B.
+            </p>
 
-    </div>
+        </div>
 
-  </footer>
+    </footer>
 
 </body>
 
