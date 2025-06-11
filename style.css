@@ -2059,11 +2059,13 @@ h5 {
 
 .fst-mlh:hover {
   background-color: #ffffff45;
+  cursor: pointer;
 }
 
 .ent-fzd:hover {
   background-color: rgba(102, 208, 78, 0.351);
   border-color: #a3e994;
+  cursor: pointer;
 }
 
 .slkcr {
@@ -2115,11 +2117,13 @@ h5 {
 
   .fst-mlh:hover {
     background-color: #2a5536;
+    cursor: pointer;
   }
 
   .ent-fzd:hover {
     background-color: rgba(102, 208, 78, 0.351);
     border-color: #afb2af;
+    cursor: pointer;
   }
 
   .video-container {
@@ -2136,4 +2140,28 @@ h5 {
     text-align: center;
   }
 
+}
+
+.fst-mlh a{
+  color: white;
+  text-decoration: none;
+}
+
+#fst-mlh a:visited {
+  color: rgb(255, 255, 255); /* Cor após ser visitado */
+}
+
+.ent-fzd a{
+  color: white;
+  text-decoration: none;
+}
+
+#ent-fzd a:visited {
+  color: rgb(255, 255, 255); /* Cor após ser visitado */
+}
+
+/*festa milho*/
+
+.slk-fst{
+  text-align: center;
 }
