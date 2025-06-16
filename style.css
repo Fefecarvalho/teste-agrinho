@@ -2095,15 +2095,24 @@ h5 {
 }
 
 @media (max-width: 800px) {
+  
+  #resposta .resposta {
+  font-weight: lighter;
+  justify-content: right;
+  width: 80%;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
 
   .fst-mlh {
-    top: calc(100% + 70px);
+    top: calc(100% + 100px);
     background-color: #276b38;
     border-color: #ffffff;
   }
 
   .ent-fzd {
-    top: calc(100% + 150px);
+    top: calc(100% + 190px);
     color: #ffffff;
     border-color: #ffffff;
     background-color: #086611a4;
@@ -2142,26 +2151,79 @@ h5 {
 
 }
 
-.fst-mlh a{
+.fst-mlh a {
   color: white;
   text-decoration: none;
 }
 
 #fst-mlh a:visited {
-  color: rgb(255, 255, 255); /* Cor após ser visitado */
+  color: rgb(255, 255, 255);
+  /* Cor após ser visitado */
 }
 
-.ent-fzd a{
+.ent-fzd a {
   color: white;
   text-decoration: none;
 }
 
 #ent-fzd a:visited {
-  color: rgb(255, 255, 255); /* Cor após ser visitado */
+  color: rgb(255, 255, 255);
+  /* Cor após ser visitado */
 }
 
 /*festa milho*/
 
-.slk-fst{
+.slk-fst {
   text-align: center;
+}
+
+/*?entervista*/
+
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+
+.jornalzin h3 {
+  font-size: 45px;
+  text-align: center;
+}
+
+.gravitas-one-regular {
+  font-family: "Gravitas One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jornalzin {
+  background-color: #fff2c7;
+  margin: 2%;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+.jornalzin .temas {
+  text-align: center;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.jornalzin .perguntas {
+  font-weight: lighter;
+  margin: 20px;
+  justify-content: left;
+  font-size: 30px;
+}
+
+.jornalzin .resposta {
+  font-weight: lighter;
+  width: 70%;
+  margin-left: 30%;
+  font-size: 27px;
+}
+
+.jornalzin .perguntin {
+  display: flex;
+  flex-direction: column;
+}
+
+.jornalzin h5{
+  font-size: 20px;
 }
