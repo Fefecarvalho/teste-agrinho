@@ -2247,3 +2247,11 @@ h5 {
   width: 50%;
   height: 50%;
 }
+
+.prf img:hover{
+  transform: scale(1.1);
+}
+
+:root:has(#modo-escuro-checkbox:checked) .jornalzin {
+  background-color: #615641;
+}
