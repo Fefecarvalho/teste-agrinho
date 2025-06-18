@@ -2095,14 +2095,14 @@ h5 {
 }
 
 @media (max-width: 800px) {
-  
+
   #resposta .resposta {
-  font-weight: lighter;
-  justify-content: right;
-  width: 80%;
-  margin-left: 7%;
-  margin-right: 7%;
-}
+    font-weight: lighter;
+    justify-content: right;
+    width: 80%;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
 
 
   .fst-mlh {
@@ -2138,7 +2138,7 @@ h5 {
   .video-container {
     position: relative;
     margin-bottom: 350px;
-    /* ajuste o valor da margem inferior */
+    /* ajustar o valor da margem inferior */
   }
 
   #ttt {
@@ -2149,6 +2149,13 @@ h5 {
     text-align: center;
   }
 
+  #slk-fst .slkcpn {
+    flex-wrap: wrap;
+    margin: 0%;
+  }
+
+  #slk-fst img
+
 }
 
 .fst-mlh a {
@@ -2158,7 +2165,7 @@ h5 {
 
 #fst-mlh a:visited {
   color: rgb(255, 255, 255);
-  /* Cor após ser visitado */
+  /* Cor dps de entrar */
 }
 
 .ent-fzd a {
@@ -2175,6 +2182,10 @@ h5 {
 
 .slk-fst {
   text-align: center;
+}
+
+.slk-fst h4 {
+  padding: 1% 15% 1% 15%;
 }
 
 /*?entervista*/
@@ -2226,32 +2237,41 @@ h5 {
   flex-direction: column;
 }
 
-.jornalzin h5{
+.jornalzin h5 {
   font-size: 25px;
 }
 
-.nacreditoquefizisso{
+.nacreditoquefizisso {
   display: flex;
   flex-wrap: wrap;
   column-gap: 3%;
   justify-content: center;
 }
 
-.coisas{
+.coisas {
   background-color: #9cbda4;
   padding: 5px;
   border-radius: 10px;
 }
 
-.slk-fst img{
+.slk-fst img {
   width: 50%;
   height: 50%;
 }
 
-.prf img:hover{
+.prf img:hover {
   transform: scale(1.1);
 }
 
 :root:has(#modo-escuro-checkbox:checked) .jornalzin {
   background-color: #615641;
+}
+
+.slkcpn {
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-evenly;
+  margin: 2% 9% 5% 5%;
+  flex-wrap: nowrap;
+  row-gap: 20px;
 }
